@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.postcard {
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  margin: 50px auto;
+  position: relative;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.postcard-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.postcard-body {
+  display: flex;
+  height: calc(100% - 60px); /* Subtract header height */
+}
+
+.body-left {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.body-right {
+  width: 50%;
+  padding: 0 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  width: 80px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: none;
+}
+
+.postcard-footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+button {
+  background-color: #333;
+  color: white;
+ 
